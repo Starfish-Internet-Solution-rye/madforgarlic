@@ -2,13 +2,13 @@ $(document).ready(function() {
 	$("#contact_form").submit(function(e) {
 		e.preventDefault();
 		var contactId = $("#contact_form").attr('id');
-		
-		if (validateForm()) {
-			$.php('/ajax/contact/submitEmailAjax',$(this).serialize());
 
-			php.error = function(xmlEr, typeEr, except) {}
+		if (validateForm()) { 
+			$.php('/ajax/contact-us/submitEmailAjax',$(this).serialize());
+			
+//			php.error = function(xmlEr, typeEr, except) {}
 			php.complete = function(XMLHttpRequest, textStatus) {
-
+				
 			//place confirmation script here
 			$('#sent-confirmation').fadeIn();
 			$('#sent-confirmation').delay(2000).fadeOut("slow");

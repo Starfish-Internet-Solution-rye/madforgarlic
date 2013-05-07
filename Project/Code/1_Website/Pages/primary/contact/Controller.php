@@ -9,15 +9,14 @@ require_once('View.php');
 class controller extends controllerSuperClass_Core
 {
 	public function submitEmailAjaxAction()
-	{
-		$from_email = $_REQUEST['mail'];
+	{	
+		$from_email = $_REQUEST['email'];
 		$from_name 	= $_REQUEST['name'];
 		$subject 	= 'New Inquiry';
 		$body 		= "
 			Name: {$_REQUEST['name']}<br>
-			Email: {$_REQUEST['mail']}<br>
-			Contact Number: {$_REQUEST['number']}<br><br>
-			Inquiry Details: <p>{$_REQUEST['message']}</p><br><br>
+			Email: {$_REQUEST['email']}<br>
+			Comment: <p>{$_REQUEST['comment']}</p><br><br>
 			AGL Energy Limited,<br>
 			Locked Bag 1837,<br>
 			St Leonards,<br>
