@@ -1,0 +1,105 @@
+/** HOME CSS ******************************************************************/
+ @import 'C:/WORKSPACE2/madforgarlic/Project/Design/1_Website/Main_Layout/css/global';
+
+#menuNavBg{
+  float:left;
+  height:489px;
+  width:301px;
+  display:inline-block;
+  background-image: url($menuNavBg);
+}
+.menuBackgrounds{
+  height: 489px;
+  width: 677px;
+  display:inline-block;
+}
+#leftNav{
+  >h2{
+    font-family:'Times New Roman';
+    color:$yellow;
+    font-weight:normal;
+    font-style:italic;
+  }
+  ul{
+    padding:0;
+    margin:0;
+    li{
+      list-style:none;
+      border-bottom: 1px solid;
+      margin: 10px;
+      &.last{
+        border-bottom:none;
+      }
+      a{
+        color:$white;
+        font-size:14px;
+        padding:10px;
+      }
+    }
+  }
+}
+#downloadMenu{
+  color:$linkOrange;
+  font-size:10px;
+}
+.menuWrap{
+  height:491px;
+  width:677px;
+  overflow: hidden;
+  background-color:$white;
+  .menuContent{
+    height: 379px;
+    width: 447px;
+    top:38px;
+    right:160px;
+    text-align:center;
+    hr{
+      color:$yellow;
+      width: 42%; 
+      margin: 0 auto;
+    }
+    p{
+      text-align:justify
+    }
+  }
+}
+.menuList{
+  height: 491px;
+  width: 677px!important;
+  overflow-y:scroll;
+  text-align: center;
+  padding: 40px 100px 0px 100px;
+  >div{
+    text-align:left;
+  }
+  h1{
+    font-size:36px;
+  }
+  hr{
+    margin:15px auto;
+    width:14%;
+  }
+  .jspContainer{
+    width: 680px!important;
+    height: 491px!important;
+  }
+  .jspDrag{
+    background:$black;
+  }
+  .jspPane{
+    width:677px!important;
+  }
+  p{
+    font-size:12px;
+    line-height:10px;
+    margin:0;
+  }
+  h3{
+    margin:10px;
+  }
+  ul{
+    li{
+      list-style:none;
+    }
+  }
+}

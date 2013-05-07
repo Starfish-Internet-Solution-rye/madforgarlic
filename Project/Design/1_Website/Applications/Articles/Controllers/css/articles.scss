@@ -1,0 +1,134 @@
+/************************************** Portfoio **************************************/
+.link_button{
+  color:#27AAE1;
+  word-wrap: break-word;
+}
+.project_container{
+  >div.fleft{
+    width:463px;
+    height:275px;
+    overflow:hidden;
+    padding: 35px 25px;
+    background:{
+      image:url('/Project/Design/1_Website/Pages/primary/portfolio/images/project_background.png');
+      repeat:no-repeat;
+      position: -10px center;
+    }
+      span{
+        display:inline-block;
+        width:100%;
+        height:100%;
+        background:{
+          repeat:no-repeat;
+          position:top center;
+        }
+      }
+  }
+  >div.fright{
+    width: 230px;
+    height: 275px;
+    padding: 10px 0 10px 55px;
+    h3{
+      a{
+        color:#C52F31;
+        font-family: 'GEInspira';
+      }
+    }
+    p{
+      color:#231F20;
+      max-height: 185px;
+      overflow:hidden;
+      line-height: 18px;
+    }
+  }
+}
+a{
+  font:{
+    family: 'HoeflerTitling-HTF-LtRoman';
+    size:15px;
+  }
+  color:#939598;
+  display:block;
+}
+h1{
+  font:{
+    family: 'HoeflerTitling-HTF-LtRoman';
+    size:32px;
+  }
+  color:#231F20;
+  max-width:550px;
+  display:inline-block;
+}
+p{
+  span{
+    font:{
+      size:18px;
+      family: 'GEInspira';
+    }
+    border-bottom:1px dashed #ccc;
+  }
+  text-align:justify;
+  line-height: 27px;
+}
+#gallery_image_container{
+  width:100%;
+  height:635px;
+  margin: 40px 0 20px;
+  background:{
+    image:url('/Project/Design/1_Website/Pages/primary/portfolio/images/project_image_gallery_shadow.png');
+    repeat:no-repeat;
+    position: bottom center;
+  }
+  #gallery_image{
+    width:100%;
+    height:626px;
+    background:{
+      repeat:no-repeat;
+      position: top center;
+    }
+  }
+}
+
+#project_brief{
+  > div.fleft{
+    width:440px;
+    p{
+      line-height: 20px;
+      margin: 10px 0 25px;
+      color:#231F20;
+    }
+  }
+  > div.fright{
+    width:225px;
+    >span{
+      font:{
+        family: 'GEInspira';
+        size:21px;
+        weight:bold;
+      }
+      display:block;
+      color:#BE1E2D;
+      margin-left: 6px;
+    }
+    .thumbnail_container{
+      width:69px;
+      height:69px;
+      padding:3px;
+      cursor:pointer;
+      margin: 0 0 8px 6px;
+      border:1px solid #A7A9AC;
+      span{
+        height:100%;
+        width:100%;
+        display:inline-block;
+        background:{
+          size:cover;
+          position:center center;
+        }
+      }
+    }
+    div.active{
+      border:2px solid #27AAE1;
+    }
+  }
+}

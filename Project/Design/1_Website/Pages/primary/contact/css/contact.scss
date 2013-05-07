@@ -1,0 +1,61 @@
+/** CONTACT CSS ******************************************************************/
+@import 'C:/WORKSPACE2/madforgarlic/Project/Design/1_Website/Main_Layout/css/global';
+
+.reservation{
+  width:334px;
+  height:291px;
+  left:15px;
+  top:32px;
+  p{
+    font-size:18px;
+    text-align:center;
+  }
+  hr{
+    width:70%;
+    margin:32px auto;
+  }
+  div{
+    p{
+      color:$yellow;
+    &.fs-23{
+      margin:0!important;
+    }
+    }
+  }
+}
+
+.feedback{
+  width:334px;
+  height:446px;
+  right:15px;
+  top:32px;
+  text-align:center;
+  p{
+    line-height:26px;
+  }
+    hr{
+    width:70%;
+    margin:32px auto;
+  }
+  input[type="text"],textarea{
+    margin:5px;
+    width:261px;
+    padding:2px;
+    background-color:$textarea;
+  }
+  textarea{
+    height:143px;
+    resize: none;
+  }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: $brown;
+  font-family:'Times New Roman';
+  font-style:italic;
+  }
+  input[type="submit"]{
+    margin-right: 4px;
+    float:right;
+    font-size:0;
+    @include spriteImage(62px,24px,-139px,-1px);
+  }
+}

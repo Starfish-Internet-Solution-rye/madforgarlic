@@ -1,0 +1,61 @@
+/************************************** MAIN **************************************/
+.sprite {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+body {
+  background-color: #292526; }
+
+#wrapper {
+  width: 979px; }
+  #wrapper div[id*='content_wrapper'] {
+    min-height: 300px; }
+
+#noScript {
+  position: relative;
+  width: 988px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0; }
+  #noScript a {
+    color: #0076C0; }
+
+.leftPan {
+  position: absolute;
+  margin-left: 18px;
+  height: 374px;
+  padding: 26px;
+  width: 247px;
+  z-index: 99;
+  text-align: center;
+  color: white !important;
+  background-size: contain;
+  background-image: url("/Project/Design/1_Website/Main_Layout/images/banner.png"); }
+  .leftPan p {
+    margin: 0!important; }
+  .leftPan > hr {
+    width: 70%;
+    margin: 10px auto; }
+
+.backgrounds {
+  height: 489px;
+  width: 978px;
+  display: inline-block; }
+
+.noOpacity {
+  padding: 25px 25px 25px 37px; }
+  .noOpacity h1, .noOpacity h2 {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    font-weight: normal;
+    color: #f7931d; }
+  .noOpacity p {
+    color: white;
+    font-size: 11px; }
+
+.opaqueWrap {
+  background-color: black;
+  opacity: 0.9;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+  filter: alpha(opacity=90); }

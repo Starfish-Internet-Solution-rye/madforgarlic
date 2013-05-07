@@ -1,0 +1,124 @@
+<!-- ******************************		NOTES    ***************************** -->
+<!-- Navigational links are grouped together into how they will be grouped together on the page							--> 
+<!-- Primary Navigation are the most important links of the website 													-->
+<!-- if you dont want the home page link on the primary navigation because its the logo then put it in the SXXDD 		-->
+
+<!-- *******************************	OPTIONS   ****************************************************-->
+<!-- default ="true display default page for website-->
+<!-- language ="en" -->
+<!-- frontend ="hide" if set to page - folder is not required in Design-->
+<!-- cms ="hide" hide page from CMS side navigation-->
+<!-- xml ="default" display default xml page for CMS-->
+<!-- **************************************************************************************************-->
+<pages>
+	<!-- ******************************		Primary Navigation    ************************************ -->
+	<navigation_group>
+		<navigation_group_id>primary</navigation_group_id>
+		<page default="true"  language="en" xml ="default">
+				<page_id>home</page_id>
+				<url_name>home</url_name>
+				<link_title>Home</link_title>
+				<link_text>Home</link_text>
+		</page>
+		<!-- ************************************** *************************************************** -->
+		<page>
+			<page_id>about</page_id>
+			<url_name>about-us</url_name>
+			<link_title>About Us</link_title>
+			<link_text>About Us</link_text>
+		</page>
+		<!-- ***************************************************************************************** -->
+		<page>
+			<page_id>menu</page_id>
+			<url_name>menu</url_name>
+			<link_title>Menu</link_title>
+			<link_text>Menu</link_text>
+				<!-- ***************************************************************************************** -->
+				<page>
+					<page_id>starter</page_id>
+					<url_name>starter</url_name>
+					<link_title>Starter</link_title>
+					<link_text>Starter</link_text>
+				</page>
+					<!-- ***************************************************************************************** -->
+				<page>
+					<page_id>salad</page_id>
+					<url_name>salad</url_name>
+					<link_title>Salad</link_title>
+					<link_text>Salad</link_text>
+				</page>
+				<!-- ***************************************************************************************** -->
+				<page>	
+					<page_id>pasta</page_id>
+					<url_name>pasta</url_name>
+					<link_title>Pasta</link_title>
+					<link_text>Pasta</link_text>
+				</page>
+				<!-- ***************************************************************************************** -->
+				<page>	
+					<page_id>pizza</page_id>
+					<url_name>pizza</url_name>
+					<link_title>Pizza</link_title>
+					<link_text>Pizza</link_text>
+				</page>
+				<!-- ***************************************************************************************** -->
+				<page>	
+					<page_id>steak</page_id>
+					<url_name>steak</url_name>
+					<link_title>Steak</link_title>
+					<link_text>Steak</link_text>
+				</page>
+				<!-- ***************************************************************************************** -->
+				<page>	
+					<page_id>rice</page_id>
+					<url_name>rice</url_name>
+					<link_title>Rice</link_title>
+					<link_text>Rice</link_text>
+				</page>
+				<!-- ***************************************************************************************** -->
+				<page>	
+					<page_id>wine</page_id>
+					<url_name>wine</url_name>
+					<link_title>Wine</link_title>
+					<link_text>Wine</link_text>
+				</page>
+				<!-- ***************************************************************************************** -->
+				<page>	
+					<page_id>desserts</page_id>
+					<url_name>desserts</url_name>
+					<link_title>Desserts</link_title>
+					<link_text>Desserts</link_text>
+				</page>
+		</page>
+		<!-- ***************************************************************************************** -->
+		<page>
+			<page_id>global</page_id>
+			<url_name>global-locations</url_name>
+			<link_title>Global Locations</link_title>
+			<link_text>Global Locations</link_text>
+		</page>
+		<!-- ***************************************************************************************** -->
+		<page>
+			<page_id>contact</page_id>
+			<url_name>contact-us</url_name>
+			<link_title>Contact Us</link_title>
+			<link_text>Contact Us</link_text>
+		</page>
+		<!-- ***************************************************************************************** -->
+	</navigation_group>
+	
+	<!-- **********************************		Secondary Navigation    ******************************* -->	
+	<navigation_group>
+		<navigation_group_id>secondary</navigation_group_id>
+		<!-- ***************************************************************************************** -->
+	</navigation_group>
+	
+	<!-- **********************************		Special Navigation    ******************************* -->	
+	<navigation_group>
+		<navigation_group_id>special</navigation_group_id>
+		<!-- ***************************************************************************************** -->
+		
+	</navigation_group>
+	
+</pages>
+<!-- **************************************************************************************************-->

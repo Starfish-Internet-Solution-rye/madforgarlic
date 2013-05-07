@@ -1,0 +1,87 @@
+/** HOME CSS ******************************************************************/
+.sprite {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+#menuNavBg {
+  float: left;
+  height: 489px;
+  width: 301px;
+  display: inline-block;
+  background-image: url("/Project/Design/1_Website/Pages/primary/menu/images/menu_bg.png"); }
+
+.menuBackgrounds {
+  height: 489px;
+  width: 677px;
+  display: inline-block; }
+
+#leftNav > h2 {
+  font-family: 'Times New Roman';
+  color: #faf39b;
+  font-weight: normal;
+  font-style: italic; }
+#leftNav ul {
+  padding: 0;
+  margin: 0; }
+  #leftNav ul li {
+    list-style: none;
+    border-bottom: 1px solid;
+    margin: 10px; }
+    #leftNav ul li.last {
+      border-bottom: none; }
+    #leftNav ul li a {
+      color: white;
+      font-size: 14px;
+      padding: 10px; }
+
+#downloadMenu {
+  color: #e3a04f;
+  font-size: 10px; }
+
+.menuWrap {
+  height: 491px;
+  width: 677px;
+  overflow: hidden;
+  background-color: white; }
+  .menuWrap .menuContent {
+    height: 379px;
+    width: 447px;
+    top: 38px;
+    right: 160px;
+    text-align: center; }
+    .menuWrap .menuContent hr {
+      color: #faf39b;
+      width: 42%;
+      margin: 0 auto; }
+    .menuWrap .menuContent p {
+      text-align: justify; }
+
+.menuList {
+  height: 491px;
+  width: 677px!important;
+  overflow-y: scroll;
+  text-align: center;
+  padding: 40px 100px 0px 100px; }
+  .menuList > div {
+    text-align: left; }
+  .menuList h1 {
+    font-size: 36px; }
+  .menuList hr {
+    margin: 15px auto;
+    width: 14%; }
+  .menuList .jspContainer {
+    width: 680px!important;
+    height: 491px!important; }
+  .menuList .jspDrag {
+    background: black; }
+  .menuList .jspPane {
+    width: 677px!important; }
+  .menuList p {
+    font-size: 12px;
+    line-height: 10px;
+    margin: 0; }
+  .menuList h3 {
+    margin: 10px; }
+  .menuList ul li {
+    list-style: none; }

@@ -1,0 +1,29 @@
+/** HOME CSS ******************************************************************/
+ @import 'C:/WORKSPACE2/madforgarlic/Project/Design/1_Website/Main_Layout/css/global';
+
+.globalContainer{
+  height:460px;
+  width:647px;
+  right:15px;
+  top:15px;
+  color:$white;
+  >h2{
+    font-size: 26px;
+  }
+  a{
+    font-size:0;
+    margin:5px;
+    @include spriteImage(12px, 19px, -125px, 2px);
+  }
+  >p{
+    font-size:10px;
+  }
+  ul{
+      float:left;
+      font-size:10px;
+      padding: 0px 52px 0px 0px;
+    li{
+      list-style:none;
+    }
+  }
+}

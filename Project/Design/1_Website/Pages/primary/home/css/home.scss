@@ -1,0 +1,24 @@
+/** HOME CSS ******************************************************************/
+ @import 'C:/WORKSPACE2/madforgarlic/Project/Design/1_Website/Main_Layout/css/global';
+
+.nivo-caption{
+  display:none!important;
+}
+.nivo-controlNav{
+  position:absolute;
+  top:430px;
+  bottom:0;
+  right:22px;
+  z-index:999;
+}
+.nivo-controlNav a {
+  @include spriteImage(20px, 21px,-85px, 0px);
+  display:block;
+  text-indent:-9999px;
+  border:0;
+  margin-right:11px;
+  float:left;
+  &.active{
+    @include spriteImage(20px,21px, -105px,0px);
+  }
+}

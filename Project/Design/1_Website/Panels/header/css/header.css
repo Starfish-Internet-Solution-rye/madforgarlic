@@ -1,0 +1,51 @@
+/************************************** HEADER **************************************/
+.sprite {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+/* USE when dealing with border radius for IE8 and lower
+#navigation{
+  behavior: url(/Project/Design/1_Website/Main_Layout/css/border-radius.htc);
+  border-radius:0 10px 0 0;
+}*/
+#header {
+  box-shadow: 0px 42px 44px -33px black;
+  position: relative;
+  z-index: 9999; }
+  #header #logo-holder {
+    margin-top: 26px;
+    margin-left: 32px; }
+  #header #navigation {
+    border-radius: 0 10px 0 0;
+    margin-top: 79px;
+    margin-right: 29px; }
+
+/************************************** NAVIGATION DEFAULTS **************************************/
+#primary_nav {
+  list-style: none;
+  display: table;
+  float: left;
+  table-layout: fixed;
+  padding: 0; }
+  #primary_nav li {
+    display: table-cell;
+    width: auto;
+    border-right: 1px solid #58585B;
+    padding-right: 10px; }
+    #primary_nav li.last {
+      border: none !important;
+      padding: 0!important; }
+    #primary_nav li a {
+      padding: 0 18px;
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 20px; }
+    #primary_nav li.active a {
+      color: #c49a6c; }
+    #primary_nav li:hover a {
+      color: #c49a6c; }

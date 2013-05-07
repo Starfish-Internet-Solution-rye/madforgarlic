@@ -1,0 +1,29 @@
+/** HOME CSS ******************************************************************/
+.sprite, .globalContainer a {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+.globalContainer {
+  height: 460px;
+  width: 647px;
+  right: 15px;
+  top: 15px;
+  color: white; }
+  .globalContainer > h2 {
+    font-size: 26px; }
+  .globalContainer a {
+    font-size: 0;
+    margin: 5px;
+    width: 12px;
+    height: 19px;
+    background-position: -125px 2px;
+    background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+  .globalContainer > p {
+    font-size: 10px; }
+  .globalContainer ul {
+    float: left;
+    font-size: 10px;
+    padding: 0px 52px 0px 0px; }
+    .globalContainer ul li {
+      list-style: none; }

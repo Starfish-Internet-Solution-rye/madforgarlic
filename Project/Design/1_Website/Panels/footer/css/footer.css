@@ -1,0 +1,71 @@
+/************************************** FOOTER **************************************/
+.sprite, #footer #socialPlug #facebook, #footer #socialPlug #twitter, #footer #forReserve #sunLogo, #footer #newsletter input[type="submit"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+#footer {
+  width: 100%;
+  height: 92px;
+  background-image: url("/Project/Design/1_Website/Panels/footer/images/footerBg.png");
+  background-repeat: "repeat-x";
+  color: white;
+  text-align: center;
+  box-shadow: 0px -42px 44px -33px black;
+  position: relative;
+  z-index: 99999; }
+  #footer #socialPlug {
+    margin-left: 23px;
+    font-size: 0em; }
+    #footer #socialPlug #facebook {
+      width: 32px;
+      height: 32px;
+      background-position: 0px 0px;
+      background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+    #footer #socialPlug #twitter {
+      margin-left: 5px;
+      width: 32px;
+      height: 32px;
+      background-position: -34px 0px;
+      background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+  #footer #forReserve {
+    margin-left: 268px; }
+    #footer #forReserve > p {
+      margin: 0!important; }
+    #footer #forReserve #sunLogo {
+      vertical-align: middle;
+      width: 43px;
+      height: 24px;
+      background-position: 0px -32px;
+      background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+  #footer p:last-child {
+    vertical-align: -24%;
+    font-size: 8px;
+    display: inline-block;
+    margin: 0; }
+  #footer #newsletter {
+    margin-right: 20px; }
+    #footer #newsletter p {
+      font-style: italic;
+      font-size: 11px;
+      margin: 0;
+      margin-right: 21px; }
+    #footer #newsletter input[type="text"] {
+      font-size: 11px;
+      padding: 2px;
+      background-color: #97999c;
+      vertical-align: 4px;
+      width: 151px; }
+    #footer #newsletter input::-webkit-input-placeholder, #footer #newsletter textarea::-webkit-input-placeholder {
+      color: #4e4e50;
+      font-style: italic; }
+    #footer #newsletter input:-moz-placeholder, #footer #newsletter textarea:-moz-placeholder {
+      color: #4e4e50;
+      font-style: italic; }
+    #footer #newsletter input[type="submit"] {
+      text-indent: -999px;
+      line-height: 32px;
+      width: 19px;
+      height: 18px;
+      background-position: -66px 0px;
+      background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }

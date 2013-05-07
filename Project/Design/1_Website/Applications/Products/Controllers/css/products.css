@@ -1,0 +1,29 @@
+/************************************** Portfoio **************************************/
+.link_button {
+  color: #27AAE1; }
+
+.project_container > div.fleft {
+  width: 463px;
+  height: 275px;
+  overflow: hidden;
+  padding: 35px 25px;
+  background-image: url("/Project/Design/1_Website/Pages/primary/portfolio/images/project_background.png");
+  background-repeat: no-repeat;
+  background-position: -10px center; }
+  .project_container > div.fleft span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center; }
+.project_container > div.fright {
+  width: 230px;
+  height: 275px;
+  padding: 10px 0 10px 55px; }
+  .project_container > div.fright h3 span {
+    color: #C52F31;
+    font-family: 'GEInspira'; }
+  .project_container > div.fright p {
+    color: #231F20;
+    max-height: 185px;
+    overflow: hidden; }

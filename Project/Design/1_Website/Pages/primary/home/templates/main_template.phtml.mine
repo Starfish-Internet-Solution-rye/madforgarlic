@@ -1,0 +1,25 @@
+<div id="<?=routes::getInstance()->getCurrentTopLevelPageID();?>_content_wrapper" class="clearfix">
+	<div id="homeBanner" class="leftPan">
+		<p>W Global Center<br />
+		30th Street corner 9th Ave.<br />
+		Bonifacio Global City,<br />
+		Taguig</p>
+		<br />
+		<h3>Monday to Thursday, Sunday</h3>
+		<br />
+		<p>11AM to 11PM</p>
+		<br />
+		<h3>Friday to Saturday</h3>
+		<br />
+		<p>11AM to 12MN</p>
+		<hr>
+	</div>
+	<div class="clearfix posRel">
+		<div id="slider" class="clearfix">
+			<?for($i=0; $i<=5; $i++):?>
+				<?if($this->displayImage($i) != NULL)?>
+				<?=$this->displayImage($i)?>
+			<?endfor;?>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+/** HOME CSS ******************************************************************/
+.sprite, .aboutContainer a[href="http://www.globalresto.com/"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+.aboutContainer {
+  height: 458px;
+  width: 542px;
+  right: 15px;
+  top: 15px; }
+  .aboutContainer h1 {
+    font-size: 36px;
+    margin-bottom: 20px; }
+  .aboutContainer p {
+    color: white;
+    font-size: 11px; }
+  .aboutContainer a[href="http://www.globalresto.com/"] {
+    font-size: 0;
+    margin: 5px;
+    width: 12px;
+    height: 19px;
+    background-position: -125px 2px;
+    background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }

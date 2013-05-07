@@ -1,0 +1,56 @@
+<form action="https://www.2checkout.com/checkout/purchase" method="post">
+	<h3>
+		Order Summary!
+	</h3>
+	<div>
+		<?
+			$items = $this->shoppingCart->items;
+			$i = 1;
+			foreach($items as $item){
+				?>
+					<div>
+						Product Name : <?=$item->product_title?>
+						<input type="hidden" name="product_id<?=$i?>" value="<?=$item->product_id?>"/>
+					</div>
+					<div>
+						Description : <?=$item->description?>
+					</div>
+					<div>Price : <?=$item->product_price?></div>
+					<div>
+						Quantity : <?=$item->quantity?>
+						<input type="hidden" name="quantity<?=$i?>" value="<?=$item->quantity?>"/>
+					</div>
+					<div>Total Price : <?=$item->price?></div>
+					<div>Discount : <?=$item->discount?></div>
+				<? $i++;
+			}
+		?>
+	</div>
+	<br><br>
+	<div>Delivery Address : <?=$this->deliveryAddress->getStreetAddress()?></div>
+	<div>Billing Address : <?=$this->billingAddress->getStreetAddress()?></div>
+	<br><br>
+	<p>
+		<input type="hidden" name="sid" value="1713765"/>
+		<input type="hidden" name="demo" value="Y"/>
+		<input type="hidden" name="merchant_order_id" value="Order ID: example"/>
+		<input type="hidden" name="buyer_id" value="1"/>
+		<input type="hidden" name="card_holder_name" value="Testing Tester"/>
+		<input type="hidden" name="street_address" value="<?=$this->billingAddress->getStreetAddress()?>"/>
+		<input type="hidden" name="city" value="<?=$this->billingAddress->getCity()?>"/>
+		<input type="hidden" name="state" value="<?=$this->billingAddress->getState()?>"/>
+		<input type="hidden" name="zip" value="<?=$this->billingAddress->getZip()?>"/>
+		<input type="hidden" name="country" value="<?=$this->billingAddress->getCountry()?>"/>
+		<input type="hidden" name="email" value="amity.ruaro@starfi.sh"/>
+		<input type="hidden" name="phone" value="<?=$this->billingAddress->getPhone()?>"/>
+		<input type="hidden" name="phone_extension" value="<?=$this->billingAddress->getPhoneExtension()?>"/>
+		<input type="hidden" name="ship_name" value="Testing Tester"/>
+		<input type="hidden" name="ship_steet_address" value="<?=$this->deliveryAddress->getStreetAddress()?>"/>
+		<input type="hidden" name="ship_city" value="<?=$this->deliveryAddress->getCity()?>"/>
+		<input type="hidden" name="ship_state" value="<?=$this->deliveryAddress->getState()?>"/>
+		<input type="hidden" name="ship_zip" value="<?=$this->deliveryAddress->getZip()?>"/>
+		<input type="hidden" name="ship_country" value="<?=$this->deliveryAddress->getCountry()?>"/>
+		<input type="hidden" name="x_receipt_link_url" value="http://expat.starfi.sh/task_scheduler/task_scheduler/test"/>
+		<input type="submit" value="Purchase"/>
+	</p>
+</form>

@@ -1,0 +1,67 @@
+/************************************** FOOTER **************************************/
+@import 'C:/WORKSPACE2/madforgarlic/Project/Design/1_Website/Main_Layout/css/global';
+
+#footer {
+  @include background (100%, 92px, $footerBg, $repeat:'repeat-x');
+  color:$white;
+  text-align:center;
+  box-shadow: 0px -42px 44px -33px #000;
+  position:relative;
+  z-index:99999;
+  #socialPlug{
+    margin-left:23px;
+    font-size:0em;
+    #facebook{
+      @include spriteImage(32px, 32px, 0px, 0px);
+    }
+    #twitter{
+      margin-left: 5px;
+      @include spriteImage(32px, 32px, -34px, 0px);
+    }
+  }
+  #forReserve{
+    >p{
+      margin:0!important;
+    }
+    margin-left:268px;
+    #sunLogo{
+      vertical-align:middle;
+      @include spriteImage(43px, 24px, 0px, -32px);
+    }
+  }
+  p:last-child{
+    vertical-align: -24%;
+    font-size:8px;
+    display:inline-block;
+    margin:0;
+  }
+  #newsletter{
+    p{
+      font-style:italic;
+      font-size:11px;
+      margin:0;
+      margin-right: 21px;
+    }
+    margin-right:20px;
+    input[type="text"]{
+      font-size: 11px;
+      padding: 2px;
+      background-color:$textBox;
+      vertical-align: 4px;
+      width:151px;
+    }
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color: $placeholder;
+      font-style:italic;
+    }
+    input:-moz-placeholder, textarea:-moz-placeholder {
+      color: $placeholder;
+      font-style:italic;
+    }
+    input[type="submit"]{
+      text-indent:-999px;
+      line-height: 32px;
+      @include spriteImage(19px, 18px, -66px,0px);
+    }
+  }
+}

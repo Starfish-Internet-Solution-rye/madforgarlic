@@ -1,0 +1,96 @@
+/************************************** Portfoio **************************************/
+.link_button {
+  color: #27AAE1;
+  word-wrap: break-word; }
+
+.project_container > div.fleft {
+  width: 463px;
+  height: 275px;
+  overflow: hidden;
+  padding: 35px 25px;
+  background-image: url("/Project/Design/1_Website/Pages/primary/portfolio/images/project_background.png");
+  background-repeat: no-repeat;
+  background-position: -10px center; }
+  .project_container > div.fleft span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center; }
+.project_container > div.fright {
+  width: 230px;
+  height: 275px;
+  padding: 10px 0 10px 55px; }
+  .project_container > div.fright h3 a {
+    color: #C52F31;
+    font-family: 'GEInspira'; }
+  .project_container > div.fright p {
+    color: #231F20;
+    max-height: 185px;
+    overflow: hidden;
+    line-height: 18px; }
+
+a {
+  font-family: 'HoeflerTitling-HTF-LtRoman';
+  font-size: 15px;
+  color: #939598;
+  display: block; }
+
+h1 {
+  font-family: 'HoeflerTitling-HTF-LtRoman';
+  font-size: 32px;
+  color: #231F20;
+  max-width: 550px;
+  display: inline-block; }
+
+p {
+  text-align: justify;
+  line-height: 27px; }
+  p span {
+    font-size: 18px;
+    font-family: 'GEInspira';
+    border-bottom: 1px dashed #ccc; }
+
+#gallery_image_container {
+  width: 100%;
+  height: 635px;
+  margin: 40px 0 20px;
+  background-image: url("/Project/Design/1_Website/Pages/primary/portfolio/images/project_image_gallery_shadow.png");
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+  #gallery_image_container #gallery_image {
+    width: 100%;
+    height: 626px;
+    background-repeat: no-repeat;
+    background-position: top center; }
+
+#project_brief > div.fleft {
+  width: 440px; }
+  #project_brief > div.fleft p {
+    line-height: 20px;
+    margin: 10px 0 25px;
+    color: #231F20; }
+#project_brief > div.fright {
+  width: 225px; }
+  #project_brief > div.fright > span {
+    font-family: 'GEInspira';
+    font-size: 21px;
+    font-weight: bold;
+    display: block;
+    color: #BE1E2D;
+    margin-left: 6px; }
+  #project_brief > div.fright .thumbnail_container {
+    width: 69px;
+    height: 69px;
+    padding: 3px;
+    cursor: pointer;
+    margin: 0 0 8px 6px;
+    border: 1px solid #A7A9AC; }
+    #project_brief > div.fright .thumbnail_container span {
+      height: 100%;
+      width: 100%;
+      display: inline-block;
+      background-size: cover;
+      background-position: center center; }
+  #project_brief > div.fright div.active {
+    border: 2px solid #27AAE1; }

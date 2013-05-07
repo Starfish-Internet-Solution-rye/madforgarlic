@@ -1,0 +1,10 @@
+<div id="<?=routes::getInstance()->getCurrentTopLevelPageID();?>_content_wrapper" class="clearfix">
+	<div class="posRel clearfix">
+		<span class="backgrounds"<?= $this->displayBackgroundImage(0)?>></span>
+			<div class="aboutContainer opaqueWrap fright posAbs">
+			</div>
+			<div class="aboutContainer noOpacity fright posAbs">
+				<?= $this->displayElement('page_content_editor')?>
+			</div>
+	</div>	
+</div>

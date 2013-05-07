@@ -1,0 +1,60 @@
+$activelink     :#C49A6C;
+$white          :#ffffff;
+$black          :#000000;
+$bodyBackground :#292526;
+$textBox        :#97999C;
+$placeholder    :#4E4E50;
+$headingOrange  :#F7931D;
+$linkOrange     :#E3A04F;
+$yellow         :#FAF39B;
+$textarea       :#D7D5D5;
+$brown          :#604C3B;
+
+$thumbs         : '/Project/Design/1_Website/Main_Layout/images/bullets.png';
+$shadow         : '/Project/Design/1_Website/Main_Layout/images/shadow.png';
+$homeBanner     : '/Project/Design/1_Website/Main_Layout/images/banner.png';
+$footerBg       : '/Project/Design/1_Website/Panels/footer/images/footerBg.png';
+$menuNavBg         : '/Project/Design/1_Website/Pages/primary/menu/images/menu_bg.png';
+
+.sprite {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+
+@mixin spriteImage($width, $height, $x, $y) {
+  @extend .sprite;
+  width: $width;
+  height: $height;
+  background-position: $x $y;
+  background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png");
+}
+
+@mixin spriteButton($width, $height, $x, $y) {
+  @extend span.sprite;
+  width: $width !important;
+  height: $height !important;
+  border: none;
+  vertical-align: middle;
+  background-position: $x $y;
+  background-image: url("/Project/Design/1_Website/Main_Layout/images/btn-sprites.png");
+  &:hover {
+    background-position: $x $y - $height;
+  }
+}
+
+@mixin centerElement($width, $height) {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: $height;
+  width: $width;
+}
+@mixin background($width,$height,$src,$repeat:no-repeat){
+  width:$width;
+  height:$height;
+  background:{
+    image:url($src);
+    repeat:$repeat;
+  }
+}

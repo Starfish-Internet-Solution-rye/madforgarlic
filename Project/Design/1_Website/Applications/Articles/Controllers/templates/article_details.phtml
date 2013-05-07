@@ -1,0 +1,38 @@
+<?$article = $this->_get('article');?>
+<a class="clearfix hoefler" href="/our-portfolio">return to portfolio</a>
+<h1 class="mTl mBm hoefler"><?=$article->__get('article_title');?></h1>
+<a class="fright mTxl" href="<?=$article->__get('link_url');?>" target="_blank"><img alt="launch the site" src="/Project/Design/1_Website/Pages/primary/portfolio/images/launch_button.png" /></a>
+<p><span><?=$article->__get('intro');?></span></p>
+<div id="gallery_image_container" class="clearfix">
+	<div id="gallery_image" style="background-image:url('/Project/Design/1_Website/Pages/primary/portfolio/images/project_image_gallery.png');"></div>
+</div>
+<div id="project_brief" class="clearfix">
+	<div class="fleft">
+		<h2 class="hoefler">Brief</h2>
+		<p><?=$article->__get('brief');?></p>
+		
+		<h2 class="hoefler">Our Approach</h2>
+		<p><?=$article->__get('approach');?></p>
+		
+		<h2 class="hoefler">What We Did</h2>
+		<p><?=$article->__get('what_we_did');?></p>
+	</div>
+	<div class="fright">
+		<span class="clearfix pBl">Gallery</span>
+		<div id="image_id" class="thumbnail_container fleft active">
+			<span style="background-image:url('/Project/Design/1_Website/Pages/primary/portfolio/images/project_image_gallery_thumb.png');"></span>
+		</div>
+		<div id="image_id" class="thumbnail_container fleft">
+			<span style="background-image:url('/Project/Design/1_Website/Pages/primary/portfolio/images/project_image_gallery_thumb2.png');"></span>
+		</div>
+		<div id="image_id" class="thumbnail_container fleft">
+			<span style="background-image:url('/Project/Design/1_Website/Pages/primary/portfolio/images/project_image_gallery_thumb3.png');"></span>
+		</div>
+		<div id="image_id" class="thumbnail_container fleft">
+			<span style="background-image:url('/Project/Design/1_Website/Pages/primary/portfolio/images/project_image_gallery_thumb4.png');"></span>
+		</div>
+		<div id="image_id" class="thumbnail_container fleft">
+			<span style="background-image:url('/Project/Design/1_Website/Pages/primary/portfolio/images/project_image_gallery_thumb5.png');"></span>
+		</div>
+	</div>
+</div>

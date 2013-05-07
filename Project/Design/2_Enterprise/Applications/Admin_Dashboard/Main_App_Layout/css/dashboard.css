@@ -1,0 +1,51 @@
+/**************************************/
+/*           DASHBOARD                */
+/**************************************/
+
+/**headers**/
+#userOnline_header,#registeredUsers_header, #payments_header{
+	background-image: url(/Project/Design/2_Enterprise/Applications/Admin_Dashboard/Main_App_Layout/images/Starfish-Enterprise-V3_header.png);
+	height: 3.125em;
+	padding: 0.938em 1.563em;
+	border-radius: 0.500em;
+	box-shadow: 0 0.313em 0.625em rgba(0,0,0,0.4);
+}
+	#content_header {
+		height: 2.688em;
+		background-color: #DADADA;
+		border-top-left-radius: 0.500em;
+		border-top-right-radius: 0.500em;
+		padding: 0.500em 0.813em;
+	}
+
+/**content**/
+#userOnine_content,#registeredUsers_content,#payments_content{
+	background-color: white;
+	background-image:url(/Project/Design/2_Enterprise/Applications/Admin_Dashboard/Main_App_Layout/images/Starfish-Enterprise-V3_silhouette.png);
+	background-repeat:no-repeat;
+	margin-top: 0.625em;
+	height: 12.188em;
+	padding: 2.188em 3.750em;
+	border-radius: 0.500em;
+}
+	#registeredUsers_content {background-image:none;padding:0;width:23.438em;min-height: 12.188em;}
+	#payments_content {background-image:none;padding:0.938em;}
+	#registeredUsers_content:nth-of-type(even){margin-right: 10px;}
+
+/**txt_shadow**/
+.txt_shadow {text-shadow: 0.063em 0.063em 0.313em rgba(0, 0, 0, 0.2);}
+
+
+#top_section{
+	padding-bottom: 1.563em;
+	height: auto;
+	overflow: auto;
+}
+
+#dashboard_outer_wrapper {width: 1140px;}
+#users_online,#payments {width: 20.625em;}
+#registered_users {width: 47.813em;}
+#userOnine_content table,#registeredUsers_content table,#payments_content table{width:100%;}
+#userOnine_content table {line-height:1.875em;}
+#registeredUsers_content table{line-height: 1.980em;}
+#payments_content table {line-height: 2em;}

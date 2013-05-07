@@ -1,0 +1,10 @@
+
+<?foreach($this->getArrayOfProducts() as $product):?>
+	
+	<?=$product->getProductTitle()?><br>
+	<?=$product->getDescription()?><br>
+
+	<?$image = product_image::selectThumbnailByType($product->getProductID(), 'listing_image',TRUE);?>
+	
+	<img src="/<?=PHOTO_LIBRARY_DIRECTORY.'/'.$image->getFullPath()?>"><br>
+<?endforeach;?>
