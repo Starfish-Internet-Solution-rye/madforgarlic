@@ -1,0 +1,16 @@
+<div id="heading" class="pAm">
+	<h4 class="fc_starfish_gray6">SEARCH PANEL</h4>
+</div>
+<form method="POST" class="p pHm">
+
+	Product Name: <input type="text" name="title" class="w100"><br>
+	Product Description: <input type="text" name="description" class="w100"><br>
+	Category:<?=$this->displayCategoryDropDown()?>
+	<br>
+	Subcategory:<div id="subcategory_list"><?=$this->displaySubCategoryDropDown()?></div>
+	<br>
+	Transaction Date:<br> <input type="text" name="date_from" class="fleft">
+	<span class="pHs">To:</span> <input type="text" name="date_to" class="fright">
+
+	<input type="submit" name="search" value="Search" class="button_container wAuto hAuto fright mTl" >
+</form>

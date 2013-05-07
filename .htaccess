@@ -1,0 +1,41 @@
+AddType application/octet-stream .pdf
+
+<FilesMatch "\.(js.gz|js)$"> 
+   AddType text/javascript .gz  
+   AddEncoding x-gzip .gz  
+</FilesMatch> 
+
+<FilesMatch "\.(css.gz|css)$">  
+	AddType text/css .gz  
+	AddEncoding x-gzip .gz  
+</FilesMatch> 
+
+<FilesMatch "\.(?i:pdf)$">
+  ForceType application/octet-stream
+  Header set Content-Disposition attachment
+</FilesMatch>
+
+<filesMatch "\.(html|htm|js|css)$">
+	FileETag None
+	<ifModule mod_headers.c>
+		Header unset ETag
+		Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+		Header set Pragma "no-cache"
+		Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+	</ifModule>
+</filesMatch>
+
+RewriteEngine on
+
+#Check to see if browser can accept gzip files.
+ReWriteCond %{HTTP:accept-encoding} gzip
+RewriteCond %{HTTP_USER_AGENT} !Safari
+#make sure there's no trailing .gz on the url
+ReWriteCond %{REQUEST_FILENAME} !^.+\.gz$
+#check to see if a .gz version of the file exists.
+RewriteCond %{REQUEST_FILENAME}.gz -f
+#All conditions met so add .gz to URL filename (invisibly)
+RewriteRule ^(.+) $1.gz [QSA,L] 
+
+RewriteRule ^main/(.*) /$1 [R=301,L]
+RewriteRule !\.(gz|js|ico|gif|jpg|png|css|swf|htc|xml|txt|kml|docx|doc|eof|ttf|eot|svg|woff|pdf)$ index.php

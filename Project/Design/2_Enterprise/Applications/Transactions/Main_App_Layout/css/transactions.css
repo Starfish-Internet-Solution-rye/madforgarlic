@@ -1,0 +1,9 @@
+#registered_users {height:410px;}
+#noImage span {color: #9D9D9C !important;}
+div#container_wrapper * { color: #575756; }
+#transactions #leftColumn input {height:25px;}
+#transactions #leftColumn form { font-size:14px;}
+#transactions #leftColumn div.selector{	width: 147px; }
+#transactions #leftColumn select{ width:100% !important; }
+#transactions #leftColumn div.selector span{ width: 138px; }
+#transactions #leftColumn input[name="date_from"],#transactions #leftColumn input[name="date_to"]{ width:33%; }

@@ -1,0 +1,44 @@
+<?php $products = $this->_get('subcategory');
+	  $product_image = $this->_get('product_image');
+?>
+<div id="product_editor" class="fleft pVl pRl pLm" style="color:black; font-size:14px;">
+	<form id="products_editor_form">
+		Product Name: <input type="text" name="subcategory_title" value="<?=$products->__get('subcategory_title')?>" />
+		<br>
+		Description: <textarea name="description"><?=$products->__get('description')?></textarea> 
+	
+		<div id="product_photos" class="fleft posRel">
+			<h4 class="fc_starfish_gray4 mBs fleft clearfix">Product Photos</h4><br /><br />
+					<?$i = 1;?>
+					<div id="gallery_image_<?=$i?>" class="clearfix posRel">
+						<div class="image_holder fleft mRl">
+							<div id="image_overflow">
+							   	<div id="img" style="background-image:url('<?=$product_image?>')" class="has_image"></div>
+							</div>
+						</div>
+			            <span class="show_photo_chooser productPhoto fleft sprite posAbs" id="gallery_image_<?=$i?>"></span>
+						<input class="image_id" type="hidden" name="image_id" value="<?=$products->__get('image_id')?>">
+						<input class="gallery_image_id" type="hidden" name="gallery_image_id[]" value="">
+					</div>
+		</div>
+		
+		<div>
+			<span id="add_variant">Add Variation</span>
+		</div>
+		
+		<div>
+			<ul id="product_variants">
+				<?php foreach($this->_get('product_variants') as $variant):?>
+				<li>
+					Variant Name: <input type="text" value="<?=$variant->__get('product_title')?>" name="variant_name[]" /> 
+					Variant Price: <input type="text" value="<?=$variant->__get('price')?>" name="variant_price[]" /> 
+					<span class="remove_variant">X</span>
+			    </li>
+			    <?php endforeach?>
+			</ul>
+		</div>
+		
+		
+		
+	</form>
+</div>

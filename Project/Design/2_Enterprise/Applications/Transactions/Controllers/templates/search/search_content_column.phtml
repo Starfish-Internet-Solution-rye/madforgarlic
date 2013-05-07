@@ -1,0 +1,41 @@
+<?if(count($this->getArrayOfResults()) > 0):?>
+<div class="w100">
+	<div>
+		<form method="POST" action="/transactions/payments/delete" >
+			<div id="content-header" class="w100 pTl">
+			<div class="diagonalStripes mBl" id="add_subcategory"><span class="fleft fc_starfish_gray3 pluSprite pLxl fwB">SEARCH RESULTS</span><input type="submit" name="btnDelete" value="DELETE" class="button_container wAuto hAuto fright mRl"/></div>
+			</div>
+			<div id="registered_users" class="scroll-pane">
+				<table style="width:900px;" class="mAuto">
+					<tr class="align_c" style="height:50px;">
+						<th></th>
+						<th style="width:15%;" class="pTs fs-l">Product Title</th>
+						<th style="width:30%;" class="pTs fs-l">Description</th>
+						<th style="width:5%;"  class="pTs fs-l">Size</th>
+						<th style="width:5%;"  class="pTs fs-l">Quantity</th>
+						<th style="width:10%;" class="pTs fs-l">Total Price</th>
+						<th style="width:20%;" class="pTs fs-l">Buyer</th>
+						<th style="width:15%;" class="pTs fs-l">Transaction Date</th>
+					</tr>
+					<?foreach($this->getArrayOfResults() as $result):?>
+					<tr class="align_c" style="border-bottom:1px solid#ccc;height:40px;vertical-align">
+						<td class="pTs fs-m "><input type="checkbox" name="payment_ids[]" value="<?=$result->getPaymentID()?>" /></td>
+						<td class="pTs fs-m "><?=$result->getProductTitle()?></td>
+						<td class="pTs fs-m"><?=$result->getDescription()?></td>
+						<td class="pTs fs-m"><?=$result->getSize()?></td>
+						<td class="pTs fs-m"><?=$result->getQuantity()?></td>
+						<td class="pTs fs-m"><?=$result->getTotalPrice()?></td>
+						<td class="pTs fs-m"><?=$result->getName()?></td>
+						<td class="pTs fs-m"><?=$result->getTransactionDate()?></td>
+					</tr>
+					
+					<?endforeach;?>
+				</table>
+			</div>
+		</form>
+	</div>
+</div>
+ 
+<?else:?>
+<div id="noImage" class="fwB fc_starfish_gray3"><span>No Search Results to display.</span></div>
+<?endif;?> 
