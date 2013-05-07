@@ -82,6 +82,7 @@
     line-height: 10px;
     margin: 0; }
   .menuList h3 {
-    margin: 10px; }
+    margin: 10px;
+    color: #5f4c3b; }
   .menuList ul li {
     list-style: none; }
