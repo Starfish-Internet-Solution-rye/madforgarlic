@@ -24,6 +24,13 @@ body{
   }
 }
 
+.sprite2{
+  background:{
+    repeat:no-repeat;
+    color:transparent;
+    image:url('/Project/Design/2_Enterprise/Main_Layout/images/enterprise_buttons_and_icons_sprite3.png');
+  }
+}
 
 div[unselectable="on"]{
   color:black;

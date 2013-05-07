@@ -1,6 +1,6 @@
 <?$i = 1;$count = 0;?>
 <!--FOR PHOTO CHOOSER-->
-<form method="post" action="" class="clearfix">
+<form method="post" action="" class="clearfix" enctype="multipart/form-data">
 	<div class="hAuto overflow" id="editor_container">
 <!--XML NODES!-->
 	<?foreach($this->_get('array_of_xml') as $node):?>
@@ -19,6 +19,14 @@
 					<span class="show_photo_chooser fleft sprite posAbs" id="node_<?=$i?>"></span>
 					</div>
 			</div>
+			<!--IF NODE IS A PDF-->
+		  <?elseif($node['name'] === 'pdf_link'):?>
+			<div class="pdfList pdf_link image_group" id="pdf_<?=$i?>">
+				<span id="pdf_name"><?=$node['name']?></span>
+				<span class="sprite2 mRxl" id="changePDF">change pdf<input type="file" id="file" /></span>
+				<input type="hidden" name="<?=$i?>" value="<?=$node['value']?>"/>
+			</div>
+			
 			<?$i++;?>
 		      
 		  <?else:$count = 0;?>
