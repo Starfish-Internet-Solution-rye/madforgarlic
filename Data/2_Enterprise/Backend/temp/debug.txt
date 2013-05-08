@@ -1,10 +1,6 @@
 Array
 (
-    [0] => Parameters Array - array(2) {
-  [0]=>
-  string(10) "subscriber"
-  [1]=>
-  string(6) "filter"
+    [0] => Parameters Array - array(0) {
 }
 
 )
