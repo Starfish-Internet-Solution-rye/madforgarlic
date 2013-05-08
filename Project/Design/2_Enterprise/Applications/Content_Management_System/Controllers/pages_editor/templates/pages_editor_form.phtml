@@ -20,11 +20,13 @@
 					</div>
 			</div>
 			<!--IF NODE IS A PDF-->
+			
 		  <?elseif($node['name'] === 'pdf_link'):?>
+		  <?php 	var_dump($node);?>
 			<div class="pdfList pdf_link image_group" id="pdf_<?=$i?>">
 				<span id="pdf_name"><?=$node['name']?></span>
-				<span class="sprite2 mRxl" id="changePDF">change pdf<input type="file" id="file" /></span>
-				<input type="hidden" name="<?=$i?>" value="<?=$node['value']?>"/>
+				<span class="sprite2 mRxl" id="changePDF">change pdf<input type="file" name="pdf" id="file" /></span>
+				<input type="hidden" name="<?=$i?>" value="<?=$node['value']?>" />
 			</div>
 			
 			<?$i++;?>

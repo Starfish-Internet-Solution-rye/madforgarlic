@@ -64,19 +64,6 @@
 				</controller>
 				
 	</application>
-	
-<!-- **************************  Subscriber Routing  *********************** -->
-	<application>
-		<application_id>Subscriber</application_id>
-		<floating_url_name>NOTUSED</floating_url_name>
-		<requires_login>yes</requires_login>
-		<has_main_layout>yes</has_main_layout>
-				<controller default="true">
-					<controller_id>subscriber</controller_id>
-					<url_name>subscriber</url_name>
-					<link_text>subscriber</link_text>
-				</controller>
-	</application>
 <!-- *******************	Content Management System Application Routing    ******************* -->		
 	<application>
 		<application_id>Content_Management_System</application_id>
@@ -125,6 +112,20 @@
 			<link_text>subcategory</link_text>
 		</controller>
 	</application>
+	
+<!-- **************************  Subscriber Routing  *********************** -->
+	<application>
+		<application_id>Subscriber</application_id>
+		<floating_url_name>NOTUSED</floating_url_name>
+		<requires_login>yes</requires_login>
+		<has_main_layout>yes</has_main_layout>
+				<controller default="true">
+					<controller_id>subscriber</controller_id>
+					<url_name>subscriber</url_name>
+					<link_text>subscriber</link_text>
+				</controller>
+	</application>
+	
 <!-- ******************************	Transactions Routing  ***************************** -->		
 	<application>
 	<application_id>Products</application_id>
