@@ -31,7 +31,7 @@ define('SECONDARY_DOMAIN','2_Enteprise');
 switch ($_SERVER['SERVER_NAME'])
 {
 		
-	case "boybawang_enterprise":
+	case "madforgarlic_enterprise":
 		define('DOMAIN','2_Enterprise');
 		break;
 	

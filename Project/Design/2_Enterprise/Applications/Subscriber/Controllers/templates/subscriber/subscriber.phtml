@@ -1,0 +1,36 @@
+<?
+$subscribers = $this->getSubscriber();
+?>
+
+
+<div class="deleteSubscriber popupDialog">
+	<span class="deleteText fc_starfish_gray8 fwB">Are you sure you want to <span class="fc_starfish_red">DELETE</span> this Job?</span>
+		<input type="submit" value="Yes"/>
+		<span class="closeDialog">Cancel</span>
+</div>
+
+
+
+<div class="clearfix" style="color:black;">
+	<span id="delete_subscriber"> Delete</span>
+</div>
+
+<?php if($this->getSubscriber() == null):?>
+	<div class="fwB fc_starfish_gray3 pointer" id="noImage">No Job to display.</div>
+	<?php else:?>
+
+	<div style="color:black;" class="clearfix">
+		<table width="80%" id="jobs">
+			<tbody>
+			<?php foreach($subscribers as $subscriber):?>
+				<tr>
+					<td><input type="checkbox" name="subscriber_id[]" value="<?=$subscriber->getSubscriberID()?>" /></td>
+					<td><?=$subscriber->getEmail()?></td>
+				</tr>
+			<?php endforeach?>
+			</tbody>
+		</table>
+		
+	</div>
+<?php endif?>
+

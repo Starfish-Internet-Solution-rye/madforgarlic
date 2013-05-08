@@ -1,0 +1,10 @@
+<div id="leftColumn" class="fleft"> 
+	<div class="pTl pLl pRl" id="heading">
+		<h3>Filter</h3>
+		<form method="POST" action="/subscriber/subscriber/filter" style="color:black">
+			Email <br />
+			<input type="text" name="email" /><br>
+			<input type="submit" name="filter" />
+		</form>
+	</div>
+</div> 

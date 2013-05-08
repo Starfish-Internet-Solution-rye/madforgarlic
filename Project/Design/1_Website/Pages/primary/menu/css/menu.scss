@@ -27,6 +27,11 @@
       list-style:none;
       border-bottom: 1px solid;
       margin: 10px;
+      &.active{
+        a{
+          color:$activelink!important;
+        }
+      }
       &.last{
         border-bottom:none;
       }
@@ -76,8 +81,16 @@
     font-size:36px;
   }
   hr{
-    margin:15px auto;
-    width:14%;
+    border:0;
+    margin: 20px;
+    &:first-of-type{
+      margin:15px auto!important;
+      width:14%;
+      border:1px solid!important;
+    }
+  }
+  img{
+    margin-right:5px;
   }
   .jspContainer{
     width: 681px!important;

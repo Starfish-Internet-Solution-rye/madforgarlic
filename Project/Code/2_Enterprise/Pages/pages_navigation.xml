@@ -23,6 +23,12 @@
 				<link_title>Edit the content of your static pages</link_title>
 				<link_text>Content Manager</link_text>
 		</page>
+		<page>
+				<page_id>subscriber</page_id>
+				<url_name>subscriber</url_name>
+				<link_title>Subscriber</link_title>
+				<link_text>Subscriber</link_text>
+		</page>
 		<!-- ***************************************************************************************** 
 		<page>
 				<page_id>products</page_id>

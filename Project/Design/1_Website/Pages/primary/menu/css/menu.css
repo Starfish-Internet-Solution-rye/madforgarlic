@@ -28,6 +28,8 @@
     list-style: none;
     border-bottom: 1px solid;
     margin: 10px; }
+    #leftNav ul li.active a {
+      color: #c49a6c !important; }
     #leftNav ul li.last {
       border-bottom: none; }
     #leftNav ul li a {
@@ -68,8 +70,14 @@
   .menuList h1 {
     font-size: 36px; }
   .menuList hr {
-    margin: 15px auto;
-    width: 14%; }
+    border: 0;
+    margin: 20px; }
+    .menuList hr:first-of-type {
+      margin: 15px auto!important;
+      width: 14%;
+      border: 1px solid!important; }
+  .menuList img {
+    margin-right: 5px; }
   .menuList .jspContainer {
     width: 681px!important;
     height: 491px!important; }
