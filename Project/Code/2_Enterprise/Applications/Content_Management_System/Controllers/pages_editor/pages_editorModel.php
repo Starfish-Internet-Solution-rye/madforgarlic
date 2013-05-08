@@ -234,6 +234,11 @@ class pages_editorModel extends modelSuperClass_Core
 							$string = "<![CDATA[".$string."]]>";
 							$node->nodeValue = $string;
 						}
+						
+						if (isset($_POST[$idCount.'_attr']))
+						{
+							$attribute = $node->setAttribute('name', $_POST[$idCount.'_attr']);
+						}
 					}
 					 
 					 

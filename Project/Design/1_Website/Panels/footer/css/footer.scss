@@ -36,11 +36,18 @@
     margin:0;
   }
   #newsletter{
-    p{
+    width: 178px;
+    right:5px;
+    label{
       font-style:italic;
-      font-size:11px;
-      margin:0;
-      margin-right: 21px;
+      font-size:11px!important;
+    }
+    label[class="error"]{
+      position: absolute;
+      left: 0;
+      color: #ed1c24;
+      top: 39px;
+      color:$red;
     }
     margin-right:20px;
     input[type="text"]{
@@ -62,6 +69,12 @@
       text-indent:-999px;
       line-height: 32px;
       @include spriteImage(19px, 18px, -66px,0px);
+    }
+    #subcriptionSent{
+      position: absolute;
+      display:none;
+      font-size: 10px;
+      top: 22px;
     }
   }
 }

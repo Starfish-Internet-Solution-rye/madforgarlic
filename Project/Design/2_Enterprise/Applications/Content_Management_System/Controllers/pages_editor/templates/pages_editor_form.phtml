@@ -20,13 +20,19 @@
 					</div>
 			</div>
 			<!--IF NODE IS A PDF-->
-			
-		  <?elseif($node['name'] === 'pdf_link'):?>
-		  <?php 	var_dump($node);?>
+		  <?elseif($node['name'] === 'PDF'):?>
 			<div class="pdfList pdf_link image_group" id="pdf_<?=$i?>">
-				<span id="pdf_name"><?=$node['name']?></span>
+				<span id="pdf_name"><?=$node['value']?></span>
 				<span class="sprite2 mRxl" id="changePDF">change pdf<input type="file" name="pdf" id="file" /></span>
-				<input type="hidden" name="<?=$i?>" value="<?=$node['value']?>" />
+				<input type="hidden" name="<?=$i?>" value="<?=$node['value']?>"/>
+				
+				<?if($node['name'] === 'PDF'):?><!--IF NODE IS AN IMAGE-->
+						<input type="hidden" class=" pHs w100 expand25-250" id="path"  name="<?=$i.'_attr'?>" value="<?=$node['attributes']['name']?>"/>
+						<input type="hidden" name="hashed_filename" />
+						<?php
+							
+						?>
+				<?endif?>			
 			</div>
 			
 			<?$i++;?>

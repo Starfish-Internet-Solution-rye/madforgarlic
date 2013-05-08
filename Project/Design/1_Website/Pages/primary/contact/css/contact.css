@@ -57,3 +57,18 @@
     height: 24px;
     background-position: -139px -1px;
     background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+
+#sent-confirmation {
+  position: absolute;
+  z-index: 90;
+  font-weight: bold;
+  display: none;
+  color: #faf39b;
+  width: 300px;
+  top: 54%;
+  right: 4%;
+  padding: 10px 20px 10px 20px;
+  font-family: 'HelveticaNeueLTStd47LtCn';
+  font-size: 18px; }
+  #sent-confirmation h2 {
+    font-size: 36px; }

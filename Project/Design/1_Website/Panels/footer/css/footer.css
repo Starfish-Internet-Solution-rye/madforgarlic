@@ -44,12 +44,18 @@
     display: inline-block;
     margin: 0; }
   #footer #newsletter {
+    width: 178px;
+    right: 5px;
     margin-right: 20px; }
-    #footer #newsletter p {
+    #footer #newsletter label {
       font-style: italic;
-      font-size: 11px;
-      margin: 0;
-      margin-right: 21px; }
+      font-size: 11px!important; }
+    #footer #newsletter label[class="error"] {
+      position: absolute;
+      left: 0;
+      color: #ed1c24;
+      top: 39px;
+      color: #ed1c24; }
     #footer #newsletter input[type="text"] {
       font-size: 11px;
       padding: 2px;
@@ -69,3 +75,8 @@
       height: 18px;
       background-position: -66px 0px;
       background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+    #footer #newsletter #subcriptionSent {
+      position: absolute;
+      display: none;
+      font-size: 10px;
+      top: 22px; }

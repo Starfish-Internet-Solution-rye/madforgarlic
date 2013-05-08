@@ -66,3 +66,19 @@
     @include spriteImage(62px,24px,-139px,-1px);
   }
 }
+  #sent-confirmation {
+  position:absolute;
+  z-index:90;
+  font-weight:bold;
+  display:none;
+  color:$yellow;
+  width:300px;
+  top: 54%;
+  right: 4%;
+  padding:10px 20px 10px 20px;
+  font-family: 'HelveticaNeueLTStd47LtCn';
+  font-size:18px;
+  h2{
+    font-size:36px;
+  }
+  }

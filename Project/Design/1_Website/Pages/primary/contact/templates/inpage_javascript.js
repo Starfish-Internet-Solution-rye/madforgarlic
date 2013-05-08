@@ -10,11 +10,13 @@ $(document).ready(function() {
 			php.complete = function(XMLHttpRequest, textStatus) {
 				
 			//place confirmation script here
+			$('#contact_form').fadeOut();
 			$('#sent-confirmation').fadeIn();
 			$('#sent-confirmation').delay(2000).fadeOut("slow");
 			
 			$('#wrapper').click(function() {
 				$('#sent-confirmation').fadeOut("slow");
+				$('#contact_form').fadeIn();
 			});
 			
 			resetForm(contactId);

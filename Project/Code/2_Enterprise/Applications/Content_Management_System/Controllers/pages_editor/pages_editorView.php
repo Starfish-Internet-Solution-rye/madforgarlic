@@ -80,7 +80,7 @@ class pages_editor_View  extends applicationsSuperView
 			$xml_array['image_path'] = $image->__get('full_path');
 		}
 		
-		$xml_array['atttributes']	= $attributes;
+		$xml_array['attributes']	= $attributes;
 		$xml_array['tag']			= $startOrEndTag;
 		
 		$this->array_of_xml[] = $xml_array;
