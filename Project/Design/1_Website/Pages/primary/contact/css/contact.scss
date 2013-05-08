@@ -52,6 +52,13 @@
   font-family:'Times New Roman';
   font-style:italic;
   }
+  label[class="error"]{
+    position: absolute;
+    font-size:10px;
+    left: 42px;
+    top: 175px;
+    color:$red;
+  }
   input[type="submit"]{
     margin-right: 4px;
     float:right;

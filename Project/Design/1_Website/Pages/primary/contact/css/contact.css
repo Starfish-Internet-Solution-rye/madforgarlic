@@ -43,6 +43,12 @@
     color: #604c3b;
     font-family: 'Times New Roman';
     font-style: italic; }
+  .feedback label[class="error"] {
+    position: absolute;
+    font-size: 10px;
+    left: 42px;
+    top: 175px;
+    color: #ed1c24; }
   .feedback input[type="submit"] {
     margin-right: 4px;
     float: right;

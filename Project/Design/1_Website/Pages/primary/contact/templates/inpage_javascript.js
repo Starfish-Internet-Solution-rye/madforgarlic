@@ -30,5 +30,32 @@ function resetForm(id) {
 }	
 function validateForm() {
 	
-	return $("#contact_form").validate().form();
+	return $("#contact_form").validate({
+		
+		rules:{
+			name:{
+				required:true,
+				},
+			email:{
+				required:true,
+				email:true
+				},
+			fName: "required",
+			message: "required"
+		},
+		
+		messages: {
+			
+			name:{
+				required:"Please fill up the required fields marked by *",
+			},
+			email:{
+				required:"Please fill up the required fields marked by *",
+				email:"Please enter a valid email address."
+			},
+			fName: "Fill out Name field",
+			message: "Fill out Name Message"
+		}
+		
+	}).form();
 }
