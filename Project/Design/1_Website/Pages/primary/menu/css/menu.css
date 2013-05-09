@@ -83,7 +83,11 @@
     width: 681px!important;
     height: 491px!important; }
   .menuList .jspDrag {
-    background: black; }
+    background: #ab842c;
+    left: 0; }
+  .menuList .jspVerticalBar {
+    background-color: #4a4a4a;
+    right: 4px; }
   .menuList .jspPane {
     width: 677px!important; }
   .menuList p {

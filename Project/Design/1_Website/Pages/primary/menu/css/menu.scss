@@ -98,7 +98,12 @@
     height: 491px!important;
   }
   .jspDrag{
-    background:$black;
+    background:$scrollBar;
+    left:0;
+  }
+  .jspVerticalBar{
+    background-color:$scrollPane;
+    right:4px;
   }
   .jspPane{
     width:677px!important;
