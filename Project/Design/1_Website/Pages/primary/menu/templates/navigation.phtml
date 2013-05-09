@@ -3,6 +3,13 @@
 		<div id="leftNav" class="leftPan">
 			<h2>Menu</h2>
 			<?= navigation::displaySecondLeveNavigationlForPage('primary');?>
-			<a href="#" id="downloadMenu">DOWNLOAD MENU</a>
+			<?
+			$url = $this->displayElement("PDF", 0, "name");
+			$url = str_replace(":", "", $url);
+			$url = str_replace("|", "&", $url);
+			?>
+			
+			<a href="<?=$url?>" id="downloadMenu" target="_blank">DOWNLOAD MENU</a>
+		
 		</div>
 	</div>

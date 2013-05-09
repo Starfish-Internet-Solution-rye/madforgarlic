@@ -19,32 +19,32 @@ class pages_editorController extends applicationsSuperController
 		if (isset($_POST['save'])) 
 		{
 			
-			$path 			= STAR_SITE_ROOT."/Data/pdf";
-			$accepted_types = array("application/pdf");
-			$filename  		= $_FILES['pdf']['name']; 
-			$ext 			= rtrim(substr($filename, strripos($filename, '.'))); 
-			$pathName		= $_POST['hashed_filename'].$ext;
-
-			$success = fileUpload::upload($_FILES, $path, $pathName, 'pdf', $accepted_types);
-			
-			if($success)
+			if(isset($_FILES['pdf']))
 			{
-				//delete the old pdf
-				$old_filename_array = glob("Data/pdf/*");
-				if(is_array($old_filename_array))
+				$path 			= STAR_SITE_ROOT."/Data/pdf";
+				$accepted_types = array("application/pdf");
+				$filename  		= $_FILES['pdf']['name']; 
+				$ext 			= rtrim(substr($filename, strripos($filename, '.'))); 
+				$pathName		= $_POST['hashed_filename'].$ext;
+	
+				$success = fileUpload::upload($_FILES, $path, $pathName, 'pdf', $accepted_types);
+				
+				if($success)
 				{
-					$basename = basename($old_filename_array[0]);
-					if($basename != $pathName)
-						unlink("Data/pdf/$basename");
-					else
+					//delete the old pdf
+					$old_filename_array = glob("Data/pdf/*");
+					if(is_array($old_filename_array))
 					{
-						$basename = basename($old_filename_array[1]);
-						unlink("Data/pdf/$basename");
+						$basename = basename($old_filename_array[0]);
+						if($basename != $pathName)
+							unlink("Data/pdf/$basename");
+						else
+						{
+							$basename = basename($old_filename_array[1]);
+							unlink("Data/pdf/$basename");
+						}
 					}
-					
 				}
-
-					
 			}
 			
 			$domObj = $pages_editorModel->updateDOMObjectWithPOST($pageXML,1);

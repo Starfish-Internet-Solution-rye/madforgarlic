@@ -1,10 +1,14 @@
 <div id="leftColumn" class="fleft"> 
 	<div class="pTl pLl pRl" id="heading">
-		<h3>Filter</h3>
-		<form method="POST" action="/subscriber/subscriber/filter" style="color:black">
-			Email <br />
-			<input type="text" name="email" /><br>
-			<input type="submit" name="filter" />
+		<div class="pAl">
+			<h3>FILTER</h3>
+		</div>
+		<div class="clearfix mLl" id="sideNavigation">
+			<form method="POST" action="/subscriber/subscriber/filter" style="color:black">
+				<label>Email</label>
+				<input type="text" name="email" /><br>
+			<input class="sprite2 mAl"type="submit" name="filter" />
 		</form>
+		</div>
 	</div>
 </div> 

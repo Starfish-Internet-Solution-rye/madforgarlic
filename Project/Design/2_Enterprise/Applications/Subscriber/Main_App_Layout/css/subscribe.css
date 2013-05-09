@@ -1,0 +1,57 @@
+/*********************************** SUBCRIBER CSS ***********************************/
+input[type="text"] {
+  width: 235px; }
+
+input[name="filter"] {
+  background-position: -3730px -38px;
+  float: right;
+  font-size: 0;
+  height: 32px;
+  width: 101px;
+  color: transparent; }
+  input[name="filter"]:active {
+    background-position: -3730px -6px; }
+
+#jobs {
+  width: 100%;
+  color: #000; }
+  #jobs th {
+    background-color: #242424;
+    font-weight: bold;
+    text-align: left;
+    height: 35px;
+    color: #FFFFFF !important; }
+  #jobs tr:nth-of-type(even) {
+    background-color: #E6E6E6; }
+  #jobs tr td {
+    vertical-align: middle;
+    height: 30px;
+    font-weight: normal; }
+    #jobs tr td:first-child {
+      width: 50px!important;
+      padding-left: 14px; }
+
+#delete_subscriber {
+  background-position: -466px -37px;
+  height: 32px;
+  width: 81px;
+  font-size: 0; }
+  #delete_subscriber:active {
+    background-position: -466px -6px; }
+
+.popUp_delete input[type="submit"] {
+  font-size: 0;
+  width: 79px;
+  height: 31px;
+  background-position: -1862px -40px; }
+  .popUp_delete input[type="submit"]:active {
+    background-position: -1862px -6px; }
+
+span.sprite2 {
+  line-height: 28px;
+  font-size: 0;
+  width: 79px;
+  height: 31px;
+  margin-left: 20px;
+  display: inline-block;
+  background-position: -1951px -40px; }

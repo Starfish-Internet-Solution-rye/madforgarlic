@@ -8,7 +8,6 @@ class controller extends controllerSuperClass_Core
 	public function indexAction()
 	{
 		$view = new view();
-		$view->displayPageNavigation();
 		$view->getjScrollPane();
 		
 		$model = new model();
@@ -22,7 +21,28 @@ class controller extends controllerSuperClass_Core
 			$XML = $model->loadDataSimpleXML('data');
 		
 		$view->_XMLObj = $XML;
+		$view->displayPageNavigation();
 		$view->renderAll();
+	}
+		
+		
+	public function downloadmenuAction()
+	{
+		
+		$orig_filename = $_GET['filename'];
+	
+		$explode = explode('.', $orig_filename);
+		$ext = $explode[count($explode) - 1];
+		
+		$path = "Data/pdf/";
+		
+		//load the endcoded path and let the user download it with the original filename.
+		header('Content-type: '.$ext);
+		header('Content-Disposition: attachment; filename="'.$orig_filename.'"');
+		readfile($path.$_GET['path'].".".$ext);
+		
+		//die is used here so that it stops the execution of the framework
+		die;
 	}
 }
 ?>
