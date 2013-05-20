@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	Cufon.replace('#homeBanner h3,#sent-confirmation h2', { fontFamily: 'Helvetica Neue LT Std' });
+	Cufon.replace('.reservation h3,#sent-confirmation h2', { fontFamily: 'Helvetica Neue LT Std' });
 	Cufon.replace('#primary_nav li a,#menu_subNav li a,ul li,#downloadMenu,#forReserve .fs-xs,p,#sent-confirmation,#newsletter label', { fontFamily: 'HelveticaNeueLT Com 45 Lt' });
 	Cufon.replace('#homeBanner p, #forReserve .fs-s', { fontFamily: 'Helvetica Neue LT Std 55' });
 	Cufon.replace('.menuList h1,.menuList h3,.menuList p', { fontFamily: 'Goudy Old Style' });

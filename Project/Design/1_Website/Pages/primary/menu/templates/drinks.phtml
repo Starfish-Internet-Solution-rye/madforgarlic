@@ -1,11 +1,9 @@
 <div id="<?=routes::getInstance()->getCurrentTopLevelPageID();?>_content_wrapper" class="clearfix">
-	<div class="posRel clearfix">
+		<div class="posRel clearfix">
 		%%SECONDLEVELNAVIGATION%%
 		<div class="menuWrap fright clearfix">
-		<span class="menuBackgrounds "></span>
-		<div class="menuContent opaqueWrap fright posAbs">
-			</div>
-			<div class="menuContent noOpacity fright posAbs">
+			<div class="menuList">
+				<?= $this->displayElement('page_content_editor')?>
 			</div>
 		</div>
 	</div>

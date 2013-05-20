@@ -18,6 +18,10 @@
       margin-left: 5px;
       @include spriteImage(32px, 32px, -34px, 0px);
     }
+    #instagram{
+      margin-left: 5px;
+      @include spriteImage(32px, 32px, -202px, 0px);
+    }
   }
   #forReserve{
     >p{
@@ -29,9 +33,11 @@
       @include spriteImage(43px, 24px, 0px, -32px);
     }
   }
+  p{
+    font-size:8px;
+  }
   p:last-child{
     vertical-align: -24%;
-    font-size:8px;
     display:inline-block;
     margin:0;
   }

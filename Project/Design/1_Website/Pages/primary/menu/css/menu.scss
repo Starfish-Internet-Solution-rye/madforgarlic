@@ -9,8 +9,10 @@
   background-image: url($menuNavBg);
 }
 .menuBackgrounds{
+  position:absolute;
+  left:0;
   height: 489px;
-  width: 677px;
+  width: 979px;
   display:inline-block;
   background-image:url('/Project/Design/1_Website/Pages/primary/menu/images/MenuBg.png');
 }
@@ -27,7 +29,7 @@
     li{
       list-style:none;
       border-bottom: 1px solid;
-      margin: 10px;
+      margin: 9px;
       &.active{
         a{
           color:$activelink!important;
@@ -106,7 +108,7 @@
     right:4px;
   }
   .jspPane{
-    width:677px!important;
+    width:710px!important;
   }
   p{
     font-size:12px;

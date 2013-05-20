@@ -1,5 +1,5 @@
 /************************************** FOOTER **************************************/
-.sprite, #footer #socialPlug #facebook, #footer #socialPlug #twitter, #footer #forReserve #sunLogo, #footer #newsletter input[type="submit"] {
+.sprite, #footer #socialPlug #facebook, #footer #socialPlug #twitter, #footer #socialPlug #instagram, #footer #forReserve #sunLogo, #footer #newsletter input[type="submit"] {
   display: inline-block;
   background-repeat: no-repeat;
   background-color: transparent; }
@@ -28,6 +28,12 @@
       height: 32px;
       background-position: -34px 0px;
       background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+    #footer #socialPlug #instagram {
+      margin-left: 5px;
+      width: 32px;
+      height: 32px;
+      background-position: -202px 0px;
+      background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
   #footer #forReserve {
     margin-left: 268px; }
     #footer #forReserve > p {
@@ -38,9 +44,10 @@
       height: 24px;
       background-position: 0px -32px;
       background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+  #footer p {
+    font-size: 8px; }
   #footer p:last-child {
     vertical-align: -24%;
-    font-size: 8px;
     display: inline-block;
     margin: 0; }
   #footer #newsletter {

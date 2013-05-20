@@ -12,8 +12,10 @@
   background-image: url("/Project/Design/1_Website/Pages/primary/menu/images/menu_bg.png"); }
 
 .menuBackgrounds {
+  position: absolute;
+  left: 0;
   height: 489px;
-  width: 677px;
+  width: 979px;
   display: inline-block;
   background-image: url("/Project/Design/1_Website/Pages/primary/menu/images/MenuBg.png"); }
 
@@ -28,7 +30,7 @@
   #leftNav ul li {
     list-style: none;
     border-bottom: 1px solid;
-    margin: 10px; }
+    margin: 9px; }
     #leftNav ul li.active a {
       color: #c49a6c !important; }
     #leftNav ul li.last {
@@ -89,7 +91,7 @@
     background-color: #4a4a4a;
     right: 4px; }
   .menuList .jspPane {
-    width: 677px!important; }
+    width: 710px!important; }
   .menuList p {
     font-size: 12px;
     line-height: 10px;

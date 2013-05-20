@@ -89,6 +89,13 @@
 					<link_title>Desserts</link_title>
 					<link_text>Desserts</link_text>
 				</page>
+				<!-- ***************************************************************************************** -->
+				<page>	
+					<page_id>drinks</page_id>
+					<url_name>drinks</url_name>
+					<link_title>Drinks</link_title>
+					<link_text>Drinks</link_text>
+				</page>
 		</page>
 		<!-- ***************************************************************************************** -->
 		<page>

@@ -2,13 +2,17 @@
 	<div id="socialPlug" class="fleft">
 		<a href="https://www.facebook.com/MadForGarlicPhilippines" id="facebook" target="blank">facebook</a>
 		<a href="https://twitter.com/madforgarlicph" id="twitter" target="blank">twitter</a>
+		<a href="http://instagram.com/madforgarlicph/" id="instagram" target="blank">instagram</a>
 	</div>
-	<div id="forReserve" class="fleft clearfix">
-		<p class="fs-xs">For reservations, please call</p>
-		<p class="fs-s">(02) 808 95 17 and (02) 808 95 03</p>
+	 	<div id="forReserve" class="fleft clearfix">
+		<!-- <p class="fs-xs">For reservations, please call</p>
+		<p class="fs-s">(02) 808 95 17 and (02) 808 95 03</p> -->
+		<?if (routes::getInstance()->getCurrentTopLevelPageID()=='menu'):?>
+		<p>*Prices are subject to change without prior notice</p>
+		<?endif;?>
 		<span id="sunLogo"></span>
 		<p>COPYRIGHT (C) SUNATFOOD. ALL RIGHTS RESERVED</p>
-	</div>
+		</div> 
 	<div id="newsletter" class="fleft clearfix posAbs">
 	<form id="subcription_form">
 		<label>subscribe to our newsletters</label>

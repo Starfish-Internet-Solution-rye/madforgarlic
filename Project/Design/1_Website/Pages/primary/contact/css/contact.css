@@ -6,7 +6,7 @@
 
 .reservation {
   width: 334px;
-  height: 291px;
+  height: 445px;
   left: 15px;
   top: 32px; }
   .reservation p {
@@ -14,11 +14,24 @@
     text-align: center; }
   .reservation hr {
     width: 70%;
-    margin: 32px auto; }
+    margin: 20px auto; }
   .reservation div p {
     color: #faf39b; }
     .reservation div p.fs-23 {
       margin: 0!important; }
+  .reservation #openingSoon {
+    margin: 23px auto;
+    height: 64px;
+    width: 164px;
+    text-align: center; }
+    .reservation #openingSoon h3 {
+      margin: 5px 0; }
+    .reservation #openingSoon .fs-s {
+      font-size: 12px!important;
+      margin: 0; }
+    .reservation #openingSoon i {
+      font-family: 'Times New Roman';
+      color: white; }
 
 .feedback {
   width: 334px;
@@ -57,6 +70,8 @@
     height: 24px;
     background-position: -139px -1px;
     background-image: url("/Project/Design/1_Website/Main_Layout/images/sprites.png"); }
+  .feedback p:last-child {
+    float: left; }
 
 #sent-confirmation {
   position: absolute;

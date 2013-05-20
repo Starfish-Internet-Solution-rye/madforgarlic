@@ -3,7 +3,7 @@
 
 .reservation{
   width:334px;
-  height:291px;
+  height:445px;
   left:15px;
   top:32px;
   p{
@@ -12,7 +12,7 @@
   }
   hr{
     width:70%;
-    margin:32px auto;
+    margin:20px auto;
   }
   div{
     p{
@@ -20,6 +20,23 @@
     &.fs-23{
       margin:0!important;
     }
+    }
+  }
+  #openingSoon{
+    margin:23px auto;
+    height:64px;
+    width:164px;
+    text-align:center;
+    h3{
+      margin: 5px 0;
+    }
+    .fs-s{
+      font-size:12px!important;
+      margin:0;
+    }
+    i{
+      font-family:'Times New Roman';
+      color:$white;
     }
   }
 }
@@ -64,6 +81,9 @@
     float:right;
     font-size:0;
     @include spriteImage(62px,24px,-139px,-1px);
+  }
+  p:last-child{
+    float:left;
   }
 }
   #sent-confirmation {
