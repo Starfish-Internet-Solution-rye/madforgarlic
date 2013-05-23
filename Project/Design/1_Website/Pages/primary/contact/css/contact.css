@@ -5,16 +5,18 @@
   background-color: transparent; }
 
 .reservation {
+  text-align: center;
+  color: white;
   width: 334px;
   height: 445px;
   left: 15px;
   top: 32px; }
   .reservation p {
     font-size: 18px;
-    text-align: center; }
+    margin: 0; }
   .reservation hr {
     width: 70%;
-    margin: 20px auto; }
+    margin: 10px auto; }
   .reservation div p {
     color: #faf39b; }
     .reservation div p.fs-23 {
@@ -43,14 +45,14 @@
     line-height: 26px; }
   .feedback hr {
     width: 70%;
-    margin: 32px auto; }
+    margin: 25px auto; }
   .feedback input[type="text"], .feedback textarea {
     margin: 5px;
     width: 261px;
     padding: 2px;
     background-color: #d7d5d5; }
   .feedback textarea {
-    height: 143px;
+    height: 95px;
     resize: none; }
   .feedback input::-webkit-input-placeholder, .feedback textarea::-webkit-input-placeholder {
     color: #604c3b;

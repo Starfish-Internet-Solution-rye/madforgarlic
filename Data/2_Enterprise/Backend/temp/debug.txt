@@ -2,24 +2,7 @@ Array
 (
     [0] => Parameters Array - array(1) {
   [0]=>
-  string(12) "pages_editor"
+  string(10) "xml_editor"
 }
 
-    [1] => <span style="color: green">$string - <pre>string(38) "Starfish Internet Solutions - Homepage"
-<pre></span>
-    [2] => <span style="color: green">$string - <pre>string(8) "HOMEPAGE"
-<pre></span>
-    [3] => <span style="color: green">$string - <pre>string(1) "."
-<pre></span>
-    [4] => <span style="color: green">$string - <pre>string(1) "."
-<pre></span>
-    [5] => <span style="color: green">$string - <pre>string(279) "<p style=\"text-align:center\"><img alt=\"Place caption here.\" src=\"/Data/Images/Menu_Images_album/23x134/madgarlic-brown.png\" style=\"height:27px; width:138px\" title=\"madgarlic-brown\" /></p>
-
-<h1 style=\"text-align:center\">Drinks</h1>
-
-<hr />
-<hr />
-<p>&nbsp;</p>
-"
-<pre></span>
 )

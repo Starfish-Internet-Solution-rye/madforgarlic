@@ -2,17 +2,19 @@
 @import 'C:/WORKSPACE2/madforgarlic/Project/Design/1_Website/Main_Layout/css/global';
 
 .reservation{
+  text-align:center;
+  color:$white;
   width:334px;
   height:445px;
   left:15px;
   top:32px;
   p{
     font-size:18px;
-    text-align:center;
+    margin:0;
   }
   hr{
     width:70%;
-    margin:20px auto;
+    margin:10px auto;
   }
   div{
     p{
@@ -52,7 +54,7 @@
   }
     hr{
     width:70%;
-    margin:32px auto;
+    margin:25px auto;
   }
   input[type="text"],textarea{
     margin:5px;
@@ -61,7 +63,7 @@
     background-color:$textarea;
   }
   textarea{
-    height:143px;
+    height:95px;
     resize: none;
   }
   input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {

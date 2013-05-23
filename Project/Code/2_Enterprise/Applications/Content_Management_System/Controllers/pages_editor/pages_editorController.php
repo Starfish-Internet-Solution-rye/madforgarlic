@@ -18,8 +18,7 @@ class pages_editorController extends applicationsSuperController
 		
 		if (isset($_POST['save'])) 
 		{
-			
-			if(isset($_FILES['pdf']))
+			if(isset($_FILES['pdf']) && $_FILES['pdf']['tmp_name'] != "")
 			{
 				$path 			= STAR_SITE_ROOT."/Data/pdf";
 				$accepted_types = array("application/pdf");
