@@ -56,7 +56,8 @@
     margin-right: 20px; }
     #footer #newsletter label {
       font-style: italic;
-      font-size: 11px!important; }
+      font-size: 11px!important;
+      color: #b38a2d; }
     #footer #newsletter label[class="error"] {
       position: absolute;
       left: 0;
@@ -67,7 +68,7 @@
       font-size: 11px;
       padding: 2px;
       background-color: #97999c;
-      vertical-align: 4px;
+      vertical-align: 9px;
       width: 151px; }
     #footer #newsletter input::-webkit-input-placeholder, #footer #newsletter textarea::-webkit-input-placeholder {
       color: #4e4e50;

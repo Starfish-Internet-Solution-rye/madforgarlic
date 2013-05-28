@@ -19,7 +19,7 @@
 #leftNav{
   >h2{
     font-family:'Times New Roman';
-    color:$yellow;
+    color:$goldish;
     font-weight:normal;
     font-style:italic;
   }
@@ -32,7 +32,7 @@
       margin: 9px;
       &.active{
         a{
-          color:$activelink!important;
+          color:$goldish!important;
         }
       }
       &.last{
@@ -47,7 +47,7 @@
   }
 }
 #downloadMenu{
-  color:$linkOrange;
+  color:$goldish;
   font-size:10px;
 }
 .menuWrap{

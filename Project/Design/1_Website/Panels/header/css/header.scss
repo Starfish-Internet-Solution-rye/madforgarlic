@@ -51,12 +51,7 @@
     }
     &.active{
       a{
-        color:$activelink;
-      }
-    }
-    &:hover{
-      a{
-        color:$activelink;
+        color:$goldish;
       }
     }
   }
