@@ -12,11 +12,8 @@ $(document).ready(function() {
 			//place confirmation script here
 			$('#contact_form').fadeOut();
 			$('#sent-confirmation').fadeIn();
-			$('#sent-confirmation').delay(2000).fadeOut("slow");
-			
-			$('#wrapper').click(function() {
-				$('#sent-confirmation').fadeOut("slow");
-				$('#contact_form').fadeIn();
+			$('#sent-confirmation').delay(200).fadeOut("slow",function(){
+			$('#contact_form').fadeIn();
 			});
 			
 			resetForm(contactId);
@@ -42,8 +39,17 @@ function validateForm() {
 				required:true,
 				email:true
 				},
-			fName: "required",
-			message: "required"
+			contactNumber:{
+				required:true,
+				digits:true,
+				},
+			branch:{
+				required:true,
+				},
+				date_visit:{
+				required:true,
+				date:true,
+				},
 		},
 		
 		messages: {
@@ -55,8 +61,17 @@ function validateForm() {
 				required:"Please fill up the required fields marked by *",
 				email:"Please enter a valid email address."
 			},
-			fName: "Fill out Name field",
-			message: "Fill out Name Message"
+			contactNumber:{
+				required:"Please fill up the required fields marked by *",
+				digits:"Please enter a valid Contact Number",
+			},
+			branch:{
+				required:"Please fill up the required fields marked by *",
+			},
+			date:{
+				required:"Please fill up the required fields marked by *",
+				date:"Please enter a valid date",
+			},
 		}
 		
 	}).form();

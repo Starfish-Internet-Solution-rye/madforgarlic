@@ -42,10 +42,10 @@
   top: 32px;
   text-align: center; }
   .feedback p {
-    line-height: 26px; }
+    line-height: 15px; }
   .feedback hr {
     width: 70%;
-    margin: 25px auto; }
+    margin: 15px auto; }
   .feedback input[type="text"], .feedback textarea {
     margin: 5px;
     width: 261px;
@@ -62,8 +62,14 @@
     position: absolute;
     font-size: 10px;
     left: 42px;
-    top: 175px;
+    top: 115px;
     color: #ed1c24; }
+  .feedback label[for="email"] {
+    top: 185px; }
+  .feedback label[for="contactNumber"] {
+    top: 218px; }
+  .feedback label[for="date_visit"] {
+    top: 284px; }
   .feedback input[type="submit"] {
     margin-right: 4px;
     float: right;

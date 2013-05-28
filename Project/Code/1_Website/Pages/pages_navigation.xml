@@ -73,14 +73,14 @@
 					<page_id>rice</page_id>
 					<url_name>rice</url_name>
 					<link_title>Rice</link_title>
-					<link_text>Rice</link_text>
+					<link_text>Rice and Risotto</link_text>
 				</page>
 				<!-- ***************************************************************************************** -->
 				<page>	
 					<page_id>wine</page_id>
 					<url_name>wine</url_name>
 					<link_title>Wine</link_title>
-					<link_text>Wine</link_text>
+					<link_text>Wine Dish</link_text>
 				</page>
 				<!-- ***************************************************************************************** -->
 				<page>	

@@ -17,12 +17,10 @@ $(document).ready(function(){
 			$("input[name='email']").val('');
 			$('#subcription_form').fadeOut();
 			$('#subcriptionSent').fadeIn();
-			$('#subcriptionSent').delay(2000).fadeOut("slow");
-			
-			$('#wrapper').click(function() {
-				$('#subcriptionSent').fadeOut("slow");
-				$('#subcription_form').fadeIn();
+			$('#subcriptionSent').delay(200).fadeOut("slow",function(){
+			$('#subcription_form').fadeIn();
 			});
+
 		}
 		
 		}

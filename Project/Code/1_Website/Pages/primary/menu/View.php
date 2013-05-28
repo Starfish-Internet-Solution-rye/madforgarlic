@@ -5,7 +5,7 @@ class view extends viewSuperClass_Core
 {
 	public function displayPageNavigation()
 	{
-		$content= $this->renderTemplate('/Project/Design/1_Website/Pages/primary/menu/templates/navigation.phtml');
+		$content= $this->renderTemplate('Project/Design/1_Website/Pages/primary/menu/templates/navigation.phtml');
 		response::getInstance()->addContentToTree(array('SECONDLEVELNAVIGATION'=>$content));
 	}
 	

@@ -14,13 +14,17 @@ class controller extends controllerSuperClass_Core
 		$from_name 	= $_REQUEST['name'];
 		$subject 	= 'New Inquiry';
 		$body 		= "
-			Name: {$_REQUEST['name']}<br>
-			Email: {$_REQUEST['email']}<br>
-			Comment: <p>{$_REQUEST['comment']}</p><br><br>
-			AGL Energy Limited,<br>
-			Locked Bag 1837,<br>
-			St Leonards,<br>
-			NSW 2060
+			Name: {$_REQUEST['name']}<br />
+			Email: {$_REQUEST['email']}<br />
+			Contact No.: {$_REQUEST['contactNumber']}<br />
+			Branch: {$_REQUEST['branch']}<br />
+			Date of Visit: {$_REQUEST['date_visit']}<br />
+			Comment: <p>{$_REQUEST['comment']}</p><br /><br />
+			Mad for Garlic,<br />
+			W Global Center,<br />
+			30th Street corner 9th Ave.,<br>
+			Bonifacio Global City,<br />
+			Taguig
 			
 		";
 
